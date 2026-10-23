@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+</head>
+<body>
+
+<h1>Employee Registration Form</h1>
+
+<form action="welcome.html" method="post" autocomplete="off" target="_blank">
+
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="emp_name">Full Name:</label>
+        <input type="text" id="emp_name" name="emp_name" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="emp_email" required>
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="emp_password" required>
+        <br><br>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="emp_phone" pattern="[0-9]{10}" required>
+        <br><br>
+
+        <label>Address:</label>
+        <textarea name="emp_address" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" name="emp_age" min="18" max="60" required>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="emp_gender" value="Male"> Male
+        <input type="radio" name="emp_gender" value="Female"> Female
+        <input type="radio" name="emp_gender" value="Other"> Other
+        <br><br>
+
+    </fieldset>
+
+    <!-- Job Information -->
+    <fieldset>
+        <legend>Job Information</legend>
+
+        <label>Employee ID:</label>
+        <input type="text" name="emp_id" required>
+        <br><br>
+
+        <label>Department:</label>
+        <select name="emp_department">
+            <option value="HR">HR</option>
+            <option value="IT">IT</option>
+            <option value="Finance">Finance</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Sales">Sales</option>
+        </select>
+        <br><br>
+
+        <label>Designation:</label>
+        <input type="text" name="emp_designation">
+        <br><br>
+
+        <label>Experience (Years):</label>
+        <input type="number" name="emp_experience" min="0" max="40">
+        <br><br>
+
+        <label>Expected Salary:</label>
+        <input type="number" name="emp_salary">
+        <br><br>
+
+        <label>Skills:</label>
+        <br>
+        <input type="checkbox" name="skill" value="Java"> Java
+        <input type="checkbox" name="skill" value="Python"> Python
+        <input type="checkbox" name="skill" value="HTML"> HTML
+        <input type="checkbox" name="skill" value="SQL"> SQL
+        <br><br>
+
+    </fieldset>
+
+    <!-- Preferences -->
+    <fieldset>
+        <legend>Preferences & Extras</legend>
+
+        <label>Upload Resume:</label>
+        <input type="file" name="resume">
+        <br><br>
+
+        <label>Favorite Color:</label>
+        <input type="color" name="fav_color">
+        <br><br>
+
+        <label>Search Job Role:</label>
+        <input type="search" name="job_search">
+        <br><br>
+
+        <label>Work Preference:</label>
+        <input type="range" name="work_range" min="1" max="10">
+        <br><br>
+
+        <label>Portfolio Website:</label>
+        <input type="url" name="portfolio">
+        <br><br>
+
+        <label>Preferred Location:</label>
+        <input list="locations" name="location">
+
+        <datalist id="locations">
+            <option value="Rajkot">
+            <option value="Ahmedabad">
+            <option value="Surat">
+            <option value="Vadodara">
+            <option value="Remote">
+        </datalist>
+        <br><br>
+
+        <label>Agree to Company Policy:</label>
+        <input type="checkbox" name="agree" required> I Agree
+        <br><br>
+
+    </fieldset>
+
+    <!-- Date & Time -->
+    <fieldset>
+        <legend>Date & Time Information</legend>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <br><br>
+
+        <label>Interview Time:</label>
+        <input type="time" name="interview_time">
+        <br><br>
+
+        <label>Joining Month:</label>
+        <input type="month" name="joining_month">
+        <br><br>
+
+        <label>Joining Week:</label>
+        <input type="week" name="joining_week">
+        <br><br>
+
+        <label>Interview Date & Time:</label>
+        <input type="datetime-local" name="interview_datetime">
+        <br><br>
+
+    </fieldset>
+
+    <!-- Form Controls -->
+    <fieldset>
+        <legend>Form Controls</legend>
+
+        <button type="button">Check Details</button>
+        <br><br>
+
+        <input type="image" src="HR.jpg" alt="Company Logo" width="120">
+        <br><br>
+
+        <input type="submit" value="Register Employee">
+        <br><br>
+
+        <input type="reset" value="Reset Form">
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>

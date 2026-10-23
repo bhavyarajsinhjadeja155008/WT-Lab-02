@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+
+<form action="welcome.html" method="post" autocomplete="off" target="_blank" novalidate>
+
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="r_fullname">Full Name:</label>
+        <input type="text" id="r_fullname" name="reg_name" placeholder="Enter Your Name" minlength="4" maxlength="30" required>
+        <!-- required = compulsory field, minlength/maxlength = allowed length of text -->
+        <br><br>
+
+        <label for="r_email">Email:</label>
+        <input type="email" id="r_email" name="reg_mail" placeholder="name@example.com" required>
+        <br><br>
+
+        <label for="r_address">Address:</label>
+        <textarea id="r_address" name="reg_address" rows="3" cols="30"></textarea>
+        <br><br>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" name="reg_hobby" value="Reading"> Reading
+        <input type="checkbox" name="reg_hobby" value="Sports"> Sports
+        <input type="checkbox" name="reg_hobby" value="Music"> Music
+        <input type="checkbox" name="reg_hobby" value="Coding"> Coding
+        <br><br>
+
+        <label for="r_password">Password:</label>
+        <input type="password" id="r_password" name="reg_password" minlength="6">
+        <br><br>
+
+        <label for="r_phone">Phone Number:</label>
+        <input type="tel" id="r_phone" name="reg_number" pattern="[0-9]{10}" placeholder="10 digit number">
+        <br><br>
+
+        <label for="r_age">Age:</label>
+        <input type="number" id="r_age" name="reg_age" min="15" max="40" required>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="r_male" name="reg_gender" value="Male"><label for="r_male">Male</label>
+        <input type="radio" id="r_female" name="reg_gender" value="Female"><label for="r_female">Female</label>
+        <br><br>
+
+    </fieldset>
+
+    <!-- Preferences & Extras -->
+    <fieldset>
+        <legend>Preferences &amp; Extras</legend>
+
+        <label>Upload Profile Picture:</label>
+        <input type="file" name="reg_file" accept="image/*">
+        <br><br>
+
+        <label>Favourite Color:</label>
+        <input type="color" name="reg_color">
+        <br><br>
+
+        <label>Search For Course:</label>
+        <input type="search" name="reg_search">
+        <br><br>
+
+        <label>Course Interest Range:</label>
+        <input type="range" name="reg_range" min="1" max="10">
+        <br><br>
+
+        <label>Personal Website:</label>
+        <input type="url" name="reg_url" placeholder="https://">
+        <br><br>
+
+        <label>Course Type:</label>
+        <select name="reg_course">
+            <optgroup label="Engineering">
+                <option value="CE">CE</option>
+                <option value="EE">EE</option>
+                <option value="CSE">CSE</option>
+            </optgroup>
+            <optgroup label="Management">
+                <option value="MBA">MBA</option>
+                <option value="BBA">BBA</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <label>Preferred Country:</label>
+        <input list="countries" name="reg_country">
+        <datalist id="countries">
+            <option value="India">
+            <option value="USA">
+            <option value="UK">
+            <option value="Dubai">
+            <option value="Japan">
+        </datalist>
+        <br><br>
+
+        <label>Agree to Terms:</label>
+        <input type="checkbox" id="r_agree" name="reg_agree" value="I Agree"><label for="r_agree">I Agree</label>
+        <br><br>
+
+    </fieldset>
+
+    <!-- Date & Time -->
+    <fieldset>
+        <legend>Date &amp; Time Info</legend>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="reg_dob">
+        <br><br>
+
+        <label>Select Time:</label>
+        <input type="time" name="reg_time">
+        <br><br>
+
+        <label>Select Month:</label>
+        <input type="month" name="reg_month">
+        <br><br>
+
+        <label>Select Week:</label>
+        <input type="week" name="reg_week">
+        <br><br>
+
+        <label>Select Date and Time:</label>
+        <input type="datetime-local" name="reg_datetime">
+        <br><br>
+
+    </fieldset>
+
+    <!-- Form Controls -->
+    <fieldset>
+        <legend>Form Controls</legend>
+
+        <button type="button">Click Me</button>
+        <br><br>
+
+        <input type="image" src="MULOGO.png" alt="MU Logo - Register Now" width="150">
+        <br><br>
+
+        <input type="submit" value="Register Now">
+        <input type="reset" value="Clear Form">
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>
